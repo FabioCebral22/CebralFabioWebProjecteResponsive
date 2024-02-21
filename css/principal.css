@@ -1,0 +1,235 @@
+/* ---- Estilos b�sicos ---------------------------------------------------- */
+* {
+    /* border: 1px solid black; */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f2f5fe url("../imagenes/fondo.gif") 0 0 repeat-x;
+    font: 70%/160% "verdana", sans-serif;
+    color: #192666;
+  }
+  
+  a {
+    color: #192666;
+  }
+  a:hover {
+    color: #4f6ad7;
+  }
+  
+  p {
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 5.5rem;
+    font-family: "georgia", serif;
+    font-weight: normal;
+  }
+  
+  h2 {
+    font-size: 180%;
+    font-family: "georgia", serif;
+    font-weight: normal;
+  }
+  
+  h3 {
+    font-size: 120%;
+    font-weight: bold;
+  }
+  
+  ul,
+  ol {
+    margin: 1em 0 1em 2em;
+    padding: 0;
+  }
+  
+  /* ---- Layout ------------------------------------------------------------- */
+  
+  #contenedor {
+    width: 100vw;
+    /* margin: 50px auto 0 auto; */
+    margin-top: 10px;
+  }
+  
+  #cabecera {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    /* background: #233c9b url("../imagenes/cabecera.jpg") no-repeat; */
+    color: #fff;
+  }
+  
+  #cabecera > img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  #cabecera .flex-center {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  #contenido {
+    /* width: 100%; */
+    width: calc(100% - 1.27%);
+    margin: 0 auto;
+    background: #fff;
+  }
+  
+  #contenido #principal {
+    /* float: left; */
+    width: 100%;
+    margin-top: 15px;
+    /* padding: 0 0 0 20px; */
+    background: #fff;
+  }
+  
+  #contenido #secundario {
+    /* float: left; */
+    width: 100%;
+    margin: 15px 0 0 0;
+    padding: 0;
+    background: #cedbf9 url("../imagenes/fondo_columna.gif") no-repeat;
+  }
+  
+  #pie {
+    clear: both;
+    height: 60px;
+    margin-bottom: 50px;
+    /* background: url("../imagenes/fondo_pie.jpg") no-repeat; */
+    color: #6685cc;
+    position: relative;
+  }
+  
+  #pie > img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  /* ---- Cabecera ----------------------------------------------------------- */
+  #cabecera #logo {
+    /*   position: absolute;
+    top: 35px;
+    left: 35px; */
+    margin: 0;
+  }
+  
+  #cabecera #logo a {
+    color: #fff;
+    display: block;
+    line-height: 35px;
+  }
+  
+  #cabecera #logo a:hover {
+    color: #b5c4e3;
+    text-decoration: underline;
+  }
+  
+  #cabecera #buscador {
+    /*   position: absolute;
+    top: 40px;
+    right: 20px; */
+  }
+  
+  #cabecera #buscador input {
+    height: 2.5rem;
+    font-size: 2rem;
+    height: 100%;
+  }
+  
+  #cabecera #buscador legend {
+    display: none;
+  }
+  
+  #cabecera #buscador fieldset {
+    border: none;
+  }
+  
+  /* ---- Men� --------------------------------------------------------------- */
+  #menu {
+    background: #192666;
+    /* width: 100%; */
+    width: calc(100% - 1.27%);
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    height: 150px;
+    padding: 20px 0;
+  }
+  
+  #menu ul {
+    margin: 0 10px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  #menu ul li {
+    margin: 0 5px 0 0;
+    padding: 0;
+    /* float: left; */
+    /* height: 3rem; */
+    font-size: 2rem;
+  }
+  
+  #menu ul li a {
+    /*   display: block;
+    position: relative; */
+    /* padding: 5px 15px; */
+    padding: 10px;
+    border: 0;
+    background: #253575;
+    color: #b5c4e3;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: calc(100vw / 6);
+  }
+  
+  #menu ul li a:hover {
+    background: #31479b;
+  }
+  
+  #menu ul li.seleccionado a {
+    background: #fff;
+    color: #ff9000;
+  }
+  
